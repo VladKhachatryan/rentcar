@@ -15,6 +15,22 @@ const cars = [
     color: "Black",
     engine: "3.2",
   },
+  {
+    name: "Mercedes E63",
+    imageSrc: "./img/sedan/mercedes.png",
+    price: 50000,
+    year: 2018,
+    color: "Brown",
+    engine: "6.3",
+  },
+  {
+    name: "Porche-Cayenne",
+    imageSrc: "./img/sedan/porche-cayenne.jpg",
+    price: 45000,
+    year: 2019,
+    color: "Black",
+    engine: "4.0",
+  },
 ];
 
 function calc(carId) {
