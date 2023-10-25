@@ -31,6 +31,38 @@ const cars = [
     color: "Black",
     engine: "4.0",
   },
+  {
+    name: "Toyota Camry",
+    imageSrc: "./img/sedan/toyota_camry_2022.jpg",
+    price: 25000,
+    year: 2022,
+    color: "Blue",
+    engine: "3.0",
+  },
+  {
+    name: "Mercedes GLE",
+    imageSrc: "./img/jeeps/mercedes_gle.webp",
+    price: 60000,
+    year: 2023,
+    color: "Black",
+    engine: "6.3",
+  },
+  {
+    name: "Toyota Supra",
+    imageSrc: "./img/sedan/toyota_supra_2022.webp",
+    price: 35000,
+    year: 2022,
+    color: "Yellow",
+    engine: "2.0",
+  },
+  {
+    name: "Range Rover",
+    imageSrc: "./img/jeeps/range_rover_2022.jpg",
+    price: 60000,
+    year: 2022,
+    color: "Brown",
+    engine: "3.0",
+  },
 ];
 
 function calc(carId) {
