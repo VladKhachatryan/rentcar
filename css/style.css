@@ -1,8 +1,35 @@
+:root {
+  --dark-color: #212a2e;
+  --light-color: #ffffff;
+  --change-transition: 1s linear;
+}
+
+body[data-theme="light"] {
+  --background-color: var(--light-color);
+  --text-color: var(--dark-color);
+}
+
+body[data-theme="dark"] {
+  --background-color: var(--dark-color);
+  --text-color: var(--light-color);
+}
+
+nav {
+  background-color: var(--background-color);
+  transition: var(--change-transition);
+}
+
+nav a {
+  color: var(--text-color) !important;
+}
+
 #cars {
-    margin-top: 20px;
+  background-color: var(--background-color);
+  padding-top: 15px;
+  transition: var(--change-transition);
 }
 
 .card-img-top {
-    height: 150px;
-    object-fit: cover;
+  height: 150px;
+  object-fit: cover;
 }

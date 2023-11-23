@@ -142,3 +142,14 @@ cars.forEach((car, index) => {
   car.card.innerHTML = generateCarCard(car, index);
   carContainer.appendChild(car.card);
 });
+
+const lightMode = document.querySelector("#light_mode");
+const darkMode = document.querySelector("#dark_mode");
+const body = document.querySelector("body");
+
+darkMode.addEventListener("click", () => {
+  body.setAttribute("data-theme", "dark");
+});
+lightMode.addEventListener("click", () => {
+  body.setAttribute("data-theme", "light");
+});
