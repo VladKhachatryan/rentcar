@@ -149,7 +149,15 @@ const body = document.querySelector("body");
 
 darkMode.addEventListener("click", () => {
   body.setAttribute("data-theme", "dark");
+  if ((darkMode.style.display = "block")) {
+    lightMode.style.display = "block";
+    darkMode.style.display = "none";
+  }
 });
 lightMode.addEventListener("click", () => {
   body.setAttribute("data-theme", "light");
+  if ((lightMode.style.display = "block")) {
+    darkMode.style.display = "block";
+    lightMode.style.display = "none";
+  }
 });

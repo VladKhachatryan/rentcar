@@ -1,22 +1,31 @@
 :root {
   --dark-color: #212a2e;
   --light-color: #ffffff;
-  --change-transition: 1s linear;
+  --change-transition: 1.5s linear;
+  --shadow-light-color: 0px 4px 31px -2px rgba(242, 247, 244, 0.6);
+  --shadow-dark-color: 0px 4px 31px -2px rgba(4, 4, 4, 0.6);
+  --card-shadow-light-color: -7px -6px 5px -2px rgba(255, 255, 255, 0.47) inset;
+  --card-shadow-dark-color: -7px -6px 5px -2px rgba(4, 4, 4, 0.47) inset;
 }
 
 body[data-theme="light"] {
   --background-color: var(--light-color);
   --text-color: var(--dark-color);
+  --shadow-color: var(--shadow-dark-color);
+  --card-shadow: var(--card-shadow-dark-color);
 }
 
 body[data-theme="dark"] {
   --background-color: var(--dark-color);
   --text-color: var(--light-color);
+  --shadow-color: var(--shadow-light-color);
+  --card-shadow: var(--card-shadow-light-color);
 }
 
 nav {
   background-color: var(--background-color);
   transition: var(--change-transition);
+  box-shadow: var(--shadow-color);
 }
 
 nav a {
@@ -27,6 +36,12 @@ nav a {
   background-color: var(--background-color);
   padding-top: 15px;
   transition: var(--change-transition);
+}
+
+.card {
+  background-color: transparent;
+  color: var(--text-color) !important;
+  box-shadow: var(--card-shadow);
 }
 
 .card-img-top {
