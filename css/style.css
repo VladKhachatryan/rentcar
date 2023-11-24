@@ -4,8 +4,8 @@
   --change-transition: 1.5s linear;
   --shadow-light-color: 0px 4px 31px -2px rgba(242, 247, 244, 0.6);
   --shadow-dark-color: 0px 4px 31px -2px rgba(4, 4, 4, 0.6);
-  --card-shadow-light-color: -7px -6px 5px -2px rgba(255, 255, 255, 0.47) inset;
-  --card-shadow-dark-color: -7px -6px 5px -2px rgba(4, 4, 4, 0.47) inset;
+  --card-shadow-light-color: 5px 5px 19px -5px rgba(255, 255, 255, 0.47) inset;
+  --card-shadow-dark-color: 5px 5px 19px -5px rgba(4, 4, 4, 0.47) inset;
 }
 
 body[data-theme="light"] {
@@ -47,4 +47,8 @@ nav a {
 .card-img-top {
   height: 150px;
   object-fit: cover;
+}
+
+#dark_mode {
+  display: none;
 }
