@@ -4,8 +4,8 @@
   --change-transition: 1.5s linear;
   --shadow-light-color: 0px 4px 31px -2px rgba(242, 247, 244, 0.6);
   --shadow-dark-color: 0px 4px 31px -2px rgba(4, 4, 4, 0.6);
-  --card-shadow-light-color: 5px 5px 19px -5px rgba(255, 255, 255, 0.47) inset;
-  --card-shadow-dark-color: 5px 5px 19px -5px rgba(4, 4, 4, 0.47) inset;
+  --card-shadow-light-color: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  --card-shadow-dark-color: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 body[data-theme="light"] {
@@ -26,15 +26,15 @@ nav {
   background-color: var(--background-color);
   transition: var(--change-transition);
   box-shadow: var(--shadow-color);
+  margin-bottom: 30px;
 }
 
 nav a {
   color: var(--text-color) !important;
 }
 
-#cars {
+body {
   background-color: var(--background-color);
-  padding-top: 15px;
   transition: var(--change-transition);
 }
 
